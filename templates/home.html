@@ -1,0 +1,14 @@
+<style>
+    li{
+        padding: 10px;
+        list-style: none;
+        line-height: 2em;
+    }
+</style>
+<h1>Message board homepage</h1>
+
+<ul>
+    {% for post in all_posts_list %}
+        <li>{{post.text}}</li>
+    {% endfor %}
+</ul>
